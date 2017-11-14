@@ -1,0 +1,18 @@
+.wrapper {
+  composes: card mt4 from 'style';
+}
+.label {
+  composes: db mt2 label from 'style';
+}
+.input {
+  composes: db w-100 input from 'style';
+}
+.buttonsWrapper {
+  composes: mt3 tc from 'style';
+}
+.button {
+  composes: ph4 pv2 dib btnDefault from 'style';
+}
+.error {
+  composes: error mt3 tr from 'style';
+}

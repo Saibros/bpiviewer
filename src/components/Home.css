@@ -1,0 +1,45 @@
+:root {
+  --color-svg: #ff9800;
+  --color-bg: #f9f9f9;
+}
+
+.wrapper {
+  composes: mt5 mt6-l from 'style';
+}
+
+.welcome {
+}
+
+.svgContainer {
+  composes: tc center from 'style';
+  width: 128px;
+  height: 128px;
+}
+.svg {
+  composes: animate fadeIn from 'style';
+}
+
+.content {
+  composes: tc mt5 from 'style';
+}
+.title {
+  composes: fw3 white from 'style';
+}
+.intro {
+  composes: fw3 white from 'style';
+}
+.button {
+  composes: ph4 pv3 mt3 btnDefault no-underline from 'style';
+}
+.name {
+  composes: brand1 from 'style';
+}
+.logo1 {
+  composes: logo1 from 'style';
+}
+.logo2 {
+  composes: logo2 from 'style';
+}
+.break {
+  composes: dn-ns from 'style';
+}

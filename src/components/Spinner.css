@@ -1,0 +1,57 @@
+:root {
+  --duration: 1.4s;
+  --offset: 187;
+  --color1: #03a9f4;
+  --color2: #ff9800;
+}
+
+.wrapper {
+  composes: mt4 mt5-l from 'style';
+}
+
+.svgContainer {
+  composes: tc center from 'style';
+  width: 60px;
+  height: 60px;
+}
+
+.svg {
+  animation: rotator var(--duration) linear infinite;
+}
+
+@keyframes rotator {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(270deg); }
+}
+
+.path {
+  fill: transparent;
+  stroke-width: 6px;
+  stroke-linecap: round;
+  stroke-dasharray: var(--offset);
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  animation:
+    dash var(--duration) ease-in-out infinite,
+    colors calc(var(--duration) * 4) ease-in-out infinite;
+}
+
+@keyframes colors {
+	0% { stroke: color(var(--color2) lightness(+ 20%)); }
+	25% { stroke: var(--color2); }
+	50% { stroke: color(var(--color1) lightness(+ 20%)); }
+	75% { stroke: color(var(--color1) lightness(+ 10%)); }
+  100% { stroke: var(--color1); }
+}
+
+@keyframes dash {
+ 0% { stroke-dashoffset: var(--offset); }
+ 50% {
+   stroke-dashoffset: calc(var(--offset) / 4);
+   transform:rotate(135deg);
+ }
+ 100% {
+   stroke-dashoffset: var(--offset);
+   transform:rotate(450deg);
+ }
+}

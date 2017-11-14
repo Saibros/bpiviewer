@@ -1,0 +1,95 @@
+:root {
+  --color-brand1: #f39c12;
+  --color-brand2: #3498db;
+  --color-dark: #20242f;
+  --color-dark2: color(var(--color-dark) lightness(+ 5%));
+}
+
+.brand1 {
+  color: var(--color-brand1);
+}
+.bg-brand1 {
+  background-color: var(--color-brand1);
+}
+.border-brand1 {
+  border-color: var(--color-brand1);
+}
+.hover-brand1:hover {
+  color: var(--color-brand1);
+}
+.hover-bg-brand1:hover {
+  background-color: var(--color-brand1);
+}
+.hover-border-brand1:hover {
+  border-color: var(--color-brand1);
+}
+.hover-brand1-darken:hover {
+  color: color(var(--color-brand1) lightness(- 5%));
+}
+.hover-bg-brand1-darken:hover {
+  background-color: color(var(--color-brand1) lightness(- 5%));
+}
+.hover-border-brand1-darken:hover {
+  border-color: color(var(--color-brand1) lightness(- 5%));
+}
+.bg-brand1-before::before,
+.bg-brand1-after::after {
+  background-color: var(--color-brand1);
+}
+
+.brand2 {
+  color: var(--color-brand2);
+}
+.bg-brand2 {
+  background-color: var(--color-brand2);
+}
+.border-brand2 {
+  border-color: var(--color-brand2);
+}
+.hover-brand2:hover {
+  color: var(--color-brand2);
+}
+.hover-bg-brand2:hover {
+  background-color: var(--color-brand2);
+}
+.hover-border-brand2:hover {
+  border-color: var(--color-brand2);
+}
+.hover-brand2-darken:hover {
+  color: color(var(--color-brand2) lightness(- 5%));
+}
+.hover-bg-brand2-darken:hover {
+  background-color: color(var(--color-brand2) lightness(- 5%));
+}
+.hover-border-brand2-darken:hover {
+  border-color: color(var(--color-brand2) lightness(- 5%));
+}
+
+.dark {
+  color: var(--color-dark);
+}
+.bg-dark {
+  background-color: var(--color-dark);
+}
+.border-dark {
+  border-color: var(--color-dark);
+}
+
+.dark2 {
+  color: var(--color-dark2);
+}
+.bg-dark2 {
+  background-color: var(--color-dark2);
+}
+.border-dark2 {
+  border-color: var(--color-dark2);
+}
+
+.stop1 {
+  stop-color: var(--color-dark2);
+  stop-opacity: 0;
+}
+.stop2 {
+  stop-color: var(--color-dark2);
+  stop-opacity: 70%;
+}

@@ -1,0 +1,51 @@
+.DateInput {
+  font-size: 13px;
+  width: 95px;
+  @media (min-width: 1100px) {
+    font-size: 16px;
+    width: 115px;
+  }
+}
+.DateRangePicker {
+  border-radius: 6px;
+  padding-top: 15px;
+}
+.DateRangePickerInput {
+  border-radius: 6px;
+  border: 1px solid #444;
+  overflow: hidden;
+}
+.CalendarMonth__caption strong {
+  font-weight: 100;
+}
+.CalendarMonth--horizontal .CalendarMonth__caption {
+  margin-bottom: 10px;
+}
+.CalendarDay {
+  border: 1px solid transparent;
+}
+.CalendarDay:hover {
+  background-color: lighten(#3498db, 20%);
+  transition: all .3s;
+}
+.DayPickerKeyboardShortcuts__title,
+.KeyboardShortcutRow__action {
+  color: white;
+}
+.DayPickerKeyboardShortcuts__panel {
+  margin: 15px;
+}
+.DateInput,
+.DateInput__input,
+.DateInput__display-text {
+  cursor: pointer;
+}
+.CalendarDay--blocked-out-of-range {
+  color: #999;
+}
+.CalendarDay__button {
+  font-size: 13px;
+}
+.DayPicker__week-header {
+  font-size: 13px;
+}

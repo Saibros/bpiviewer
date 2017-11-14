@@ -1,0 +1,18 @@
+:root {
+  --color-axis: #ffffff;
+}
+
+.axis {
+  fill: none;
+}
+.axis path {
+  stroke: #666;
+}
+.axis line {
+  stroke: #666;
+}
+.axis text {
+  fill: var(--color-axis);
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+}

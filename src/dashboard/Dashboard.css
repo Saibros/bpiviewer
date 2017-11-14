@@ -1,0 +1,10 @@
+.wrapper {
+  composes: pa2 pa4-l cf from 'style';
+}
+
+.colLeft {
+  composes: fl w-100 w-third-l pa2 from 'style';
+}
+.colRight {
+  composes: fl w-100 w-two-thirds-l pa2 from 'style';
+}

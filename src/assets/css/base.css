@@ -1,0 +1,44 @@
+html {
+  min-height: 100%;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  /*background: linear-gradient(135deg, #2b4076 15%,#6a85ce 90%);*/
+  background: var(--color-dark);
+}
+
+.card {
+  composes: pa4;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  background-color: var(--color-dark2);
+}
+
+footer {
+  font-size: 12px;
+}
+
+.no-focus:focus {
+  outline: none;
+}
+.link {
+  composes: link no-focus;
+}
+.defaultLink {
+  composes: link;
+  color: var(--color-brand1);
+  transition: all .3s linear;
+}
+.defaultLink:hover,
+.defaultLink:active {
+  color: color(var(--color-brand1) lightness(- 10%));
+}
+
+.logo1 {
+  font-weight: 900;
+  color: var(--color-brand1);
+}
+.logo2 {
+  font-weight: 100;
+  color: var(--color-brand1);
+}

@@ -1,0 +1,4 @@
+.wrapper {
+  composes: db mt2 from 'style';
+  min-width: 180px;
+}

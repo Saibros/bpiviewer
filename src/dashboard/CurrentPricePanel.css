@@ -1,0 +1,53 @@
+.wrapper {
+  composes: card from 'style';
+  color: #ffffff;
+}
+
+.current {
+  composes: mt1 f2 fw1 from 'style';
+  @media (min-width: 1400px) {
+    font-size: 3em;
+  }
+}
+
+.usd {
+  composes: mt3 from 'style';
+}
+
+.up {
+  position: relative;
+  color: #2ecc71;
+  margin-left: 20px;
+}
+.up:before {
+  content: '';
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: -16px;
+  top: 4px;
+  position: absolute;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 12px solid #2ecc71;
+}
+.down {
+  position: relative;
+  color: #e74c3c;
+  margin-left: 20px;
+}
+.down:before {
+  content: '';
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: -16px;
+  top: 4px;
+  position: absolute;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 12px solid #e74c3c;
+}
+.same {
+  color: #f1c40f;
+}

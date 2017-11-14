@@ -1,0 +1,31 @@
+.wrapper {
+  background: transparent;
+}
+
+.stop1 {
+  composes: stop1 from 'style';
+}
+.stop2 {
+  composes: stop2 from 'style';
+}
+
+.line {
+  fill: none;
+  stroke-width: 4px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.area {
+  fill: url(#gradient);
+}
+
+.dot {
+  fill: white;
+  stroke-width: 3px;
+  transition: 0.2s all;
+}
+
+.dot:hover {
+  stroke-opacity: 0.5;
+}

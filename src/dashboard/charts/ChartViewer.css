@@ -1,0 +1,18 @@
+.wrapper {
+  min-height: 400px;
+}
+
+.title {
+  composes: ma0 pa3 brand1 f4 fw4 from 'style';
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  cursor: move;
+}
+
+.inner {
+  composes: relative from 'style';
+  @media (min-width: 960px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
